@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessible HTML5 — Index</title>
+  <meta name="description" content="Sample accessible semantic HTML5 page built for a GitHub Classroom assignment.">
+  <meta name="keywords" content="HTML5, accessibility, semantic HTML, SEO">
+  <meta name="author" content="Your Name">
+  <!-- Optional: replace the canonical with your repository or website URL -->
+  <link rel="canonical" href="https://github.com/PLP-WebTechnologies/july-2025-introduction-to-html-5-Jadvy/blob/main/index.html">
+  <style>
+    /* Small styles to make the page readable during review */
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:1rem}
+    header,footer{background:#f5f5f5;padding:1rem}
+    nav ul{display:flex;gap:1rem;list-style:none;padding:0;margin:0}
+    .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{position:static;width:auto;height:auto}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header role="banner">
+    <div class="site-branding">
+      <h1>My Accessible HTML5 Page</h1>
+      <p class="tagline">Semantic structure • Accessibility • SEO</p>
+    </div>
+
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" role="main">
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About this page</h2>
+      <p>This single-file example demonstrates semantic HTML5 elements, accessible markup and SEO-friendly metadata.</p>
+    </section>
+
+    <section id="services" aria-labelledby="services-heading">
+      <h2 id="services-heading">Services</h2>
+
+      <article aria-labelledby="webdev-heading">
+        <h3 id="webdev-heading">Web development</h3>
+        <p>Building accessible, responsive websites using semantic HTML and progressive enhancement.</p>
+      </article>
+
+      <article aria-labelledby="audit-heading">
+        <h3 id="audit-heading">Accessibility audits</h3>
+        <p>Testing pages against WCAG and recommending fixes to improve usability for all users.</p>
+      </article>
+    </section>
+
+    <aside aria-label="Additional information">
+      <h2>Quick tips</h2>
+      <ul>
+        <li>Use a logical heading order (H1 → H2 → H3).</li>
+        <li>Add meaningful <code>alt</code> text to images.</li>
+        <li>Use descriptive link text (avoid "click here").</li>
+      </ul>
+    </aside>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>If you'd like to reach me: <a href="mailto:jadkouka@gmail.com">jadkouka@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Your Name</p>
+    <address>Based in Cape Town — <a href="mailto:jadkouka@gmail.com">jadkouka@gmail.com</a></address>
+  </footer>
+</body>
+</html>
